@@ -1,0 +1,30 @@
+{
+  "name": "autonomous-controller",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public -p 5555"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@beyonk/svelte-notifications": "^3.1.0",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "babel-loader": "^8.2.2",
+    "rollup": "^2.41.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^3.38.2",
+    "svelte-loader": "^3.1.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "postcss": "^8.2.14",
+    "sirv-cli": "^1.0.0",
+    "svelte-preprocess": "^4.7.3"
+  }
+}
