@@ -1,5 +1,6 @@
 <script>
-  import Video from './components/Video.svelte';
+  import LeftBar from './components/LeftBar.svelte';
+  import RightBar from './components/RightBar.svelte';
 </script>
 
 <!-- use lang="sass" for SASS -->
@@ -12,8 +13,7 @@
 <!-- Header -->
 <section class="l-section">
     <div class="l-container">
-        <div class="c-content-wrapper">
-            <Video></Video>
-        </div>
+        <LeftBar></LeftBar>
+        <RightBar></RightBar>
     </div>
 </section>

@@ -1,83 +1,47 @@
 // START: Setting global variables
+:root {
     // Font family(s)
-    $coreFontFamily: "Helvetica Neue",Arial,sans-serif;
-
-    // Color's
-    $brandBlue: #125ef7;
-    $white: #ffffff;
-    $lightGrey: #f1f1f1;
-    $darkCopy: #333333;
+    --font-family: "Helvetica Neue",Arial,sans-serif;
+    // Colors
+    --white: #FFFFFF;
+    --blue1: #0D59F2;
+    --blue2: #86ACF8;
+    --gray1: #aeb7c9;
+    --gray2: #6d7c97;
+    --gray3: #38404f;
+    --gray4: #232932;
+    --gray5: #181c23;
+}
 
 // END: Setting global variables
 
 // START: Setting global typography
-    body {
-        font-family: $coreFontFamily !important;
-        color: $darkCopy;
-        font-weight: 400;
-        font-size: 16px;
-        padding: 0 0;
-        margin: 0 0;
-    }
+body {
+    font-family: var(--font-family);
+    background-color: var(--gray3);
+    color: var(--white);
+    font-weight: 400;
+    padding: 0 0;
+    margin: 0 0;
+}
 // END: Setting global typography
 
 // START: Layout styling
 
-    .l-section {
-        margin-bottom: 50px;
-        position: relative;
-        overflow-x: hidden;
-        &--header {
-            margin: 0 0;
-            height: 65vh;
-            &:before {
-                content: '';
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: rgba($brandBlue, 0.55);
-            }
-            .l-container {
-                position: relative;
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .l-header {
-            background-color: $lightGrey;
-            padding: 15px 0;
-            margin-bottom: 25px;
-        }
-        .l-body {
-            .c-button {
-                margin-bottom: 15px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-    .l-container {
-        max-width: 1600px;
-        padding: 0 15px;
-        margin: 0 auto;
-    }
+.l-section {
+    position: relative;
+    overflow-x: hidden;
+}
+.l-container {
+    max-width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
 // END: Layout styling
 
 // START: Component styling
-.c-content-wrapper {
-    position: relative;
-    max-width: 800px;
-    width: 100%;
-    overflow: hidden;
-    @media only screen and (max-width: 930px) {
-        max-width: none;
-    }
-    &--secondary {
-        margin-top: 50px;
-    }
-}
+
 // END: Component styling
 
 // START: Modifiers
@@ -87,12 +51,5 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}
-.m-dark {
-    background-color: $darkCopy;
-    padding: 50px 50px;
-    @media only screen and (max-width: 930px) {
-        padding: 10px 10px;
-    }
 }
 // END: Modifiers
