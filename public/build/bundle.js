@@ -950,13 +950,13 @@ var app = (function () {
     			t1 = space();
     			button2 = element("button");
     			create_component(arrowupsline.$$.fragment);
-    			attr_dev(button0, "class", "icon-button svelte-16iluap");
+    			attr_dev(button0, "class", "icon-button svelte-x9zwag");
     			add_location(button0, file$5, 6, 4, 304);
-    			attr_dev(button1, "class", "icon-button svelte-16iluap");
+    			attr_dev(button1, "class", "icon-button svelte-x9zwag");
     			add_location(button1, file$5, 9, 4, 387);
-    			attr_dev(button2, "class", "icon-button icon-button--chevron svelte-16iluap");
+    			attr_dev(button2, "class", "icon-button icon-button--chevron svelte-x9zwag");
     			add_location(button2, file$5, 12, 4, 468);
-    			attr_dev(div, "class", "container container--left-bar svelte-16iluap");
+    			attr_dev(div, "class", "container container--left-bar svelte-x9zwag");
     			add_location(div, file$5, 5, 0, 256);
     		},
     		l: function claim(nodes) {
@@ -1547,13 +1547,13 @@ var app = (function () {
     			t1 = space();
     			button2 = element("button");
     			create_component(commandline.$$.fragment);
-    			attr_dev(button0, "class", "icon-button svelte-xr7b1w");
+    			attr_dev(button0, "class", "icon-button svelte-8sz97d");
     			add_location(button0, file$1, 6, 4, 295);
-    			attr_dev(button1, "class", "icon-button icon-button--ruler svelte-xr7b1w");
+    			attr_dev(button1, "class", "icon-button icon-button--ruler svelte-8sz97d");
     			add_location(button1, file$1, 9, 4, 375);
-    			attr_dev(button2, "class", "icon-button icon-button--command svelte-xr7b1w");
+    			attr_dev(button2, "class", "icon-button icon-button--command svelte-8sz97d");
     			add_location(button2, file$1, 12, 4, 474);
-    			attr_dev(div, "class", "container container--right-bar svelte-xr7b1w");
+    			attr_dev(div, "class", "container container--right-bar svelte-8sz97d");
     			add_location(div, file$1, 5, 0, 246);
     		},
     		l: function claim(nodes) {

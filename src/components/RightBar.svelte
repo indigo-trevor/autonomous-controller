@@ -20,7 +20,7 @@
         right: 0;
         top: 0;
         padding: 1rem;
-        height: 100vh;
+        height: calc(100vh - 2rem);
         background-color: transparent;
         display: flex;
         flex-direction: column;
@@ -41,7 +41,7 @@
               &--command {
                   border-radius: 8px;
                   position: absolute;
-                  bottom: 2rem;
+                  bottom: 0;
                   right: 1rem;
                   width: 40px;
                   height: 40px;

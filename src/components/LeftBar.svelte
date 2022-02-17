@@ -20,7 +20,7 @@
         left: 0;
         top: 0;
         padding: 1rem;
-        height: 100vh;
+        height: calc(100vh - 2rem);
         background-color: transparent;
         display: flex;
         flex-direction: column;
@@ -42,7 +42,7 @@
                 width: 65px;
                 height: 65px;
                 position: absolute;
-                bottom: 2rem;
+                bottom: 0rem;
               }
               &:hover {
                 color: var(--blue2);
