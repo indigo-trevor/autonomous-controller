@@ -1,6 +1,6 @@
 <script>
     import Settings5Line from 'svelte-remixicon/lib/icons/Settings5Line.svelte';
-    import VidIconLine from 'svelte-remixicon/lib/icons/VidIconLine.svelte';
+    import VidiconLine from 'svelte-remixicon/lib/icons/VidiconLine.svelte';
     import ArrowUpSLine from 'svelte-remixicon/lib/icons/ArrowUpSLine.svelte';
 </script>
 <div class="container container--left-bar">
@@ -8,7 +8,7 @@
         <Settings5Line size="28"/>
     </button>
     <button class="icon-button"> 
-        <VidIconLine size="28"/>
+        <VidiconLine size="28"/>
     </button>
     <button class="icon-button icon-button--chevron"> 
         <ArrowUpSLine size="40"/>
