@@ -16,7 +16,7 @@
 </div>
   <style lang="scss">
       .container--right-bar {
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 0;
         padding: 1rem;
@@ -40,24 +40,23 @@
               height: 50px;
               &--command {
                   border-radius: 8px;
-                  position: absolute;
-                  bottom: 0;
-                  right: 1rem;
                   width: 40px;
                   height: 40px;
                   padding-top: 4px;
-                }
-                &:hover {
-                    color: var(--blue2);
+                  position: -webkit-sticky;
+                  position: sticky;
+                  margin-top: auto;
+                  margin-bottom: 0;
+                  bottom: 0;
                 }
                 &:active {
                     color: var(--blue2);
-                    transform: scale(0.95);
+                    transform: scale(0.9);
                 }
                 &--ruler {
                     transform: rotate(270deg);
                     &:active {
-                        transform: scale(0.95) rotate(270deg);
+                        transform: scale(0.90) rotate(270deg);
                     }
                 }
           } 

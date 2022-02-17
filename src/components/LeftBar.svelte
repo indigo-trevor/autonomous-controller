@@ -16,7 +16,7 @@
 </div>
   <style lang="scss">
       .container--left-bar {
-        position: fixed;
+        position: absolute;
         left: 0;
         top: 0;
         padding: 1rem;
@@ -41,15 +41,15 @@
               &--chevron {
                 width: 65px;
                 height: 65px;
-                position: absolute;
-                bottom: 0rem;
-              }
-              &:hover {
-                color: var(--blue2);
+                position: -webkit-sticky;
+                position: sticky;
+                margin-top: auto;
+                margin-bottom: 0;
+                bottom: 0;
               }
               &:active {
                   color: var(--blue2);
-                  transform: scale(0.95);
+                  transform: scale(0.9);
               }
           } 
       }
