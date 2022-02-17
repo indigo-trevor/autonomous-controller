@@ -42,21 +42,25 @@
                   border-radius: 8px;
                   width: 40px;
                   height: 40px;
-                  padding-top: 4px;
+                  padding-top: 2px;
                   position: -webkit-sticky;
                   position: sticky;
                   margin-top: auto;
                   margin-bottom: 0;
+                  padding-right: 6px;
                   bottom: 0;
+                }
+                &:hover {
+                    color: var(--blue2);
                 }
                 &:active {
                     color: var(--blue2);
-                    transform: scale(0.9);
+                    transform: scale(0.95);
                 }
                 &--ruler {
                     transform: rotate(270deg);
                     &:active {
-                        transform: scale(0.90) rotate(270deg);
+                        transform: scale(0.95) rotate(270deg);
                     }
                 }
           } 

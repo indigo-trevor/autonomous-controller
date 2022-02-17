@@ -47,9 +47,12 @@
                 margin-bottom: 0;
                 bottom: 0;
               }
+              &:hover {
+                color: var(--blue2);
+              }
               &:active {
                   color: var(--blue2);
-                  transform: scale(0.9);
+                  transform: scale(0.95);
               }
           } 
       }
