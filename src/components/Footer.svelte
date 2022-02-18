@@ -3,7 +3,7 @@
   import CommandLine from 'svelte-remixicon/lib/icons/CommandLine.svelte';
   import WifiLine from 'svelte-remixicon/lib/icons/WifiLine.svelte';
   import CellphoneLine from 'svelte-remixicon/lib/icons/CellphoneLine.svelte';
-  import SignalwifioffLine from 'svelte-remixicon/lib/icons/SignalwifioffLine.svelte';
+  import SignalwifiLine from 'svelte-remixicon/lib/icons/SignalwifiLine.svelte';
   import BatteryLine from 'svelte-remixicon/lib/icons/BatteryLine.svelte';
   import Signalwifi3Line from 'svelte-remixicon/lib/icons/Signalwifi3Line.svelte';
 </script>
@@ -37,7 +37,7 @@
         </div>
         <div class="footer-item footer-item--large footer-item--icon-only">
             <div class="icon-container icon-container--wifi">
-                <SignalwifioffLine size="22"/>
+                <SignalwifiLine size="22"/>
             </div>
         </div>
         <div class="footer-item footer-item--large">
@@ -87,11 +87,6 @@
                     &--right {
                         padding-left: 1.25rem;
                     }
-                }
-                &__desc {
-                    position: relative;
-                    display: inline-block;
-                    margin: 0 .25rem 0 0;
                 }
 
                 &--large {
