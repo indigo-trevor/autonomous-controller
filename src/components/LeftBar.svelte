@@ -16,7 +16,7 @@
 </div>
   <style lang="scss">
       .container--left-bar {
-        position: relative;
+        position: absolute;
         z-index: 2;
         left: 0;
         top: 0;

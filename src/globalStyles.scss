@@ -19,7 +19,7 @@
 // START: Setting global typography
 body {
     font-family: var(--font-family);
-    background-color: var(--gray3);
+    background-color: var(--gray4);
     color: var(--white);
     font-weight: 400;
     padding: 0 0;
@@ -29,10 +29,10 @@ body {
 
 // START: Layout styling
 
-.l-section {
-    position: relative;
-    overflow-x: hidden;
-}
+// .l-section {
+//     position: relative;
+//     overflow-x: hidden;
+// }
 
 // END: Layout styling
 

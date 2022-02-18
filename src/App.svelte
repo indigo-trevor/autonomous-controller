@@ -3,6 +3,7 @@
   import LeftBar from './components/LeftBar.svelte';
   import RightBar from './components/RightBar.svelte';
   import Footer from './components/Footer.svelte';
+  import FPV from './components/FPV.svelte';
 </script>
 
 <!-- use lang="sass" for SASS -->
@@ -15,6 +16,7 @@
 <!-- Header -->
 <section class="l-section">
     <div class="l-container">
+        <FPV></FPV>
         <Header></Header>
         <LeftBar></LeftBar>
         <RightBar></RightBar>
