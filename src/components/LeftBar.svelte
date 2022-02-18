@@ -16,17 +16,17 @@
 </div>
   <style lang="scss">
       .container--left-bar {
-        position: absolute;
+        position: relative;
+        z-index: 2;
         left: 0;
         top: 0;
-        padding: 1rem;
-        height: calc(100vh - 2rem);
+        padding: 3.5rem 1rem 1rem 1rem;
+        height: calc(100vh - 4.5rem);
         background-color: transparent;
         display: flex;
         flex-direction: column;
           .icon-button {
               border: none;
-              display: block;
               position: relative;
               text-align: center;
               background-color: var(--gray5);
@@ -38,6 +38,11 @@
               margin-bottom: 1rem;
               width: 50px;
               height: 50px;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              box-shadow: 0px 2px 4px var(--gray5);
               &--chevron {
                 width: 65px;
                 height: 65px;

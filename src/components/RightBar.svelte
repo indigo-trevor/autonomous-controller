@@ -17,16 +17,16 @@
   <style lang="scss">
       .container--right-bar {
         position: absolute;
+        z-index: 2;
         right: 0;
         top: 0;
-        padding: 1rem;
-        height: calc(100vh - 2rem);
+        padding: 3.5rem 1rem 1rem 1rem;
+        height: calc(100vh - 4.5rem);
         background-color: transparent;
         display: flex;
         flex-direction: column;
           .icon-button {
               border: none;
-              display: block;
               position: relative;
               text-align: center;
               background-color: var(--gray5);
@@ -38,16 +38,19 @@
               margin-bottom: 1rem;
               width: 50px;
               height: 50px;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+              align-items: center;
+              box-shadow: 0px 2px 4px var(--gray5);
               &--command {
                   border-radius: 8px;
                   width: 40px;
                   height: 40px;
-                  padding-top: 2px;
                   position: -webkit-sticky;
                   position: sticky;
                   margin-top: auto;
                   margin-bottom: 0;
-                  padding-right: 6px;
                   bottom: 0;
                 }
                 &:hover {
