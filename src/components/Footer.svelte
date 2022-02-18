@@ -52,6 +52,9 @@
             </div>
             <p class="footer-item__title footer-item__title--right">GPS</p>
         </div>
+        <div class="footer-item">
+            <p class="footer-item__title">14:23</p>
+        </div>
     </div>
 </div>
   <style lang="scss">
@@ -132,6 +135,10 @@
                 }
                 &:first-child {
                     margin-right: 2px;
+                }
+                &:last-child {
+                    margin-left: 2px;
+                    color: var(--gray1);
                 }
             }
           } 
