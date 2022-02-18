@@ -3088,7 +3088,7 @@ var app = (function () {
     		CommandLine,
     		WifiLine,
     		CellphoneLine,
-    		SignalwifiLine: SignalWifiLine,
+    		SignalWifiLine,
     		BatteryLine,
     		Signalwifi3Line: SignalWifi3Line
     	});
