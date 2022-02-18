@@ -5,7 +5,7 @@
   import CellphoneLine from 'svelte-remixicon/lib/icons/CellphoneLine.svelte';
   import SignalWifiLine from 'svelte-remixicon/lib/icons/SignalWifiLine.svelte';
   import BatteryLine from 'svelte-remixicon/lib/icons/BatteryLine.svelte';
-  import Signalwifi3Line from 'svelte-remixicon/lib/icons/Signalwifi3Line.svelte';
+  import SignalWifi3Line from 'svelte-remixicon/lib/icons/SignalWifi3Line.svelte';
 </script>
 <div class="container container--footer">
     <div class="content-container">
@@ -48,7 +48,7 @@
         </div>
         <div class="footer-item footer-item--large">
             <div class="icon-container icon-container--wifi-gps">
-                <Signalwifi3Line size="22"/>
+                <SignalWifi3Line size="22"/>
             </div>
             <p class="footer-item__title footer-item__title--right">GPS</p>
         </div>
