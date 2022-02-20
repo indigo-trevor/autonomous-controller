@@ -9,9 +9,9 @@ export const createScene = (canvas) => {
 
     var videoDome = new BABYLON.VideoDome(
         "videoDome",
-        ["/build/assets/pano.mp4"],
+        ["/build/assets/space-station.mp4"],
         {
-            resolution: 64,
+            resolution: 32,
             clickToPlay: true,
             autoPlay: true
         },
@@ -19,7 +19,6 @@ export const createScene = (canvas) => {
     );
 
     engine.runRenderLoop(() => {
-        console.log("scene rendered")
         scene.render();
       });
     

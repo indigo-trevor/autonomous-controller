@@ -38,7 +38,7 @@
         background-color: var(--gray5);
         box-shadow: 0px 1px 12px 8px var(--gray5);
         cursor: default;
-        z-index: 1;
+        z-index: 2;
         .content-container {
             position: relative;
             display: flex;

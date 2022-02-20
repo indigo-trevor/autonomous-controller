@@ -17,7 +17,7 @@
   <style lang="scss">
       .container--right-bar {
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         right: 0;
         top: 0;
         padding: 3.5rem 1rem 1rem 1rem;

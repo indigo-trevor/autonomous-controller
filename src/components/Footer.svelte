@@ -63,7 +63,7 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        z-index: 1;
+        z-index: 2;
         .content-container {
             position: relative;
             cursor: default;
@@ -90,7 +90,7 @@
                 }
 
                 &--large {
-                    font-size: 14px;
+                    font-size: .875rem;
                     color: var(--gray1);
                     .icon-container {
                         position: absolute;

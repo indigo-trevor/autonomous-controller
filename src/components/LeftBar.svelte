@@ -2,11 +2,25 @@
     import Settings5Line from 'svelte-remixicon/lib/icons/Settings5Line.svelte';
     import VidiconLine from 'svelte-remixicon/lib/icons/VidiconLine.svelte';
     import ArrowUpSLine from 'svelte-remixicon/lib/icons/ArrowUpSLine.svelte';
+    import { showControl } from './stores.js';
+
+	
+    const toggleVariation = () => { 
+        $showControl = !$showControl 
+    }
+
 </script>
 <div class="container container--left-bar">
     <button class="icon-button"> 
         <Settings5Line size="28"/>
     </button>
+    <div class="test-nav">
+        <div class="test-nav__inner">
+            <h4>Test Variation</h4>
+            <p on:click={toggleVariation} class="{$showControl === true ? 'active' : ''}">Control</p>
+            <p on:click={toggleVariation} class="{$showControl === false ? 'active' : ''}">Variation 1</p>
+        </div>
+    </div>
     <button class="icon-button"> 
         <VidiconLine size="28"/>
     </button>
@@ -17,7 +31,7 @@
   <style lang="scss">
       .container--left-bar {
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         left: 0;
         top: 0;
         padding: 3.5rem 1rem 1rem 1rem;
@@ -60,6 +74,35 @@
                   transform: scale(0.95);
               }
           } 
+          .test-nav {
+              position: absolute;
+              width: 115px;
+              left: 70px;
+              top: 55px;
+              background-color: var(--gray5);
+              text-align: left;
+              border-radius: 8px;
+              &__inner {
+                  padding: 1rem;
+                  font-size: .75rem;
+                  h4 {
+                    margin: 0 0 .5em 0;
+                    font-weight: 700;
+                  }
+                  p {
+                      margin: 0 0 .25rem 0 ;
+                      transition: all 150ms ease;
+                      cursor: pointer;
+                      &:hover {
+                          color: var(--blue2);
+                        }
+                        &.active {
+                          pointer-events: none;
+                        color: var(--blue2);
+                      }
+                  }
+              }
+          }
       }
   </style>
 
