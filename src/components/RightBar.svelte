@@ -3,7 +3,7 @@
     import Ruler2Line from 'svelte-remixicon/lib/icons/Ruler2Line.svelte';
     import CommandLine from 'svelte-remixicon/lib/icons/CommandLine.svelte';
 </script>
-<div class="container container--right-bar">
+<nav class="nav nav--right-bar">
     <button class="icon-button"> 
         <PencilLine size="28"/>
     </button>
@@ -13,9 +13,9 @@
     <button class="icon-button icon-button--command"> 
         <CommandLine size="22"/>
     </button>
-</div>
+</nav>
   <style lang="scss">
-      .container--right-bar {
+      .nav--right-bar {
         position: absolute;
         z-index: 3;
         right: 0;
@@ -25,9 +25,9 @@
         background-color: transparent;
         display: flex;
         flex-direction: column;
-        @media only screen and (max-width: 930px) and (orientation: portrait) {
-            padding: 5.5rem .5rem .5rem .5rem;
-            height: calc(100vh - 6rem);
+        @media only screen and (max-width: 930px) and (orientation: landscape) {
+            padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+            height: calc(100vh - 3rem);
         }
           .icon-button {
               border: none;
@@ -58,6 +58,7 @@
                   bottom: 0;
                   @media only screen and (max-width: 930px) and (orientation: portrait) {
                     bottom: 50px;
+                    right: -5px;
                   }
                 }
                 &:hover {

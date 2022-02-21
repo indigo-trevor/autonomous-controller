@@ -13,20 +13,33 @@
     :global {
         @import 'globalStyles.scss';
     }
+    .wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
     .intro-container {
-        opacity: 1;
+        z-index: 5;
         visibility: visible;
-        transition: all 1s ease;
+        transition: all 350ms ease-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateY(0);
         &.active {
-            opacity: 0;
+            transform: translateY(100%);
             visibility: hidden;
         }
     }
 </style>
 
 <!-- Header -->
-<section class="l-section">
-    <div class="l-container">
+    <div class="wrapper">
         <div class="intro-container {$showIntro === true ? 'active' : ''}">
             <Intro></Intro>
         </div>
@@ -42,6 +55,4 @@
         <!-- Test = Variation 1 -->
             <Variation1></Variation1>
         {/if}
-        
     </div>
-</section>

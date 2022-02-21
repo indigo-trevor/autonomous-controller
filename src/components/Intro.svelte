@@ -8,7 +8,7 @@
     }
 
 </script>
-<div class="container container--intro">
+<section class="section section--intro">
   <div class="inner">
     <h1>Autonomous Controller</h1>
     <div class="drone-container">
@@ -25,9 +25,9 @@
     </div>
     <button class="button" on:click={toggleIntro}>Get started</button>
   </div>
-</div>
+</section>
 <style lang="scss">
-    .container--intro {
+    .section--intro {
       position: fixed;
       width: 100vw;
       height: 100vh;
@@ -35,9 +35,9 @@
       left: 0;
       z-index: 4;
       background-color: var(--gray5);
-      background-image: linear-gradient(rgba(#232932, 0.7), rgba(#232932, 0.7)), url("assets/grid.png");
-        background-repeat: repeat;
-        background-size: 300px 400px;
+      background-image: linear-gradient(rgba(35, 41, 50, 0.9), rgba(35, 41, 50, 0.9)), url("assets/da-grid.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -89,7 +89,7 @@
           padding: .75rem 2.5rem;
         }
         &:hover {
-          background-color: var(--gray6);
+          background-color: rgba(#161616, 0.35);
           border-color: var(--blue1);
         }
         &:active {

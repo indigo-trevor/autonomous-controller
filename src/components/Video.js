@@ -12,6 +12,7 @@ export default class Video {
   setup() {
     this.camera = new BABYLON.ArcRotateCamera("Camera", -Math.PI / 2,  Math.PI / 2, 5, BABYLON.Vector3.Zero(), this.scene);
     this.camera.attachControl(this.canvas, true);
+    this.camera.setTarget(new BABYLON.Vector3(-5, 0, 0));
 
       var videoDome = new BABYLON.VideoDome(
         "videoDome",

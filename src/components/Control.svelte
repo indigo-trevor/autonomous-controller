@@ -14,12 +14,12 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
 	});
 
 </script>
-<div class="container container--control">
+<sectiion class="section section--control">
   <!-- Babylon FPV -->
-  <div class="section section--fpv">
+  <div class="container container--fpv">
     <canvas bind:this={canvas} id="app"></canvas>
   </div>
-  <div class="section section--map">
+  <div class="container container--map">
     <div class="drone-container">
       <LottiePlayer
         src="build/assets/map-drone.json"
@@ -33,10 +33,9 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
       />
     </div>
   </div>
-
-</div>
+</sectiion>
 <style lang="scss">
-    .container--control {
+    .section--control {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -46,14 +45,14 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
       @media only screen and (max-width: 930px) and (orientation: portrait) {
         flex-wrap: wrap;
       }
-      .section--fpv {
+      .container--fpv {
         position: relative;
-        width: 50%;
+        width: 70%;
         height: 100%;
         background-color: var(--gray4);
         z-index: 2;
         @media only screen and (max-width: 930px) and (orientation: landscape) {
-          width: 60%;
+          width: 70%;
         }
         @media only screen and (max-width: 930px) and (orientation: portrait) {
            width: 100%;
@@ -72,11 +71,11 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
             transform: translate(-50%,-50%);
         }
       }
-      .section--map {
+      .container--map {
         position: relative;
         overflow-x: visible;
         z-index: 3;
-        width: 50%;
+        width: 30%;
         height: 100%;
         background-color: var(--gray4);
         display: flex;
@@ -84,18 +83,31 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
         justify-content: center;
         align-items: center;
         border-left: 4px solid var(--gray2);
-        background-image: linear-gradient(rgba(#232932, 0.7), rgba(#232932, 0.7)), url("assets/grid.png");
+        background-image: linear-gradient(rgba(#232932, 0.95), rgba(#232932, 0.95)), url("assets/white-grid.png");
         background-repeat: repeat;
-        background-size: 300px 400px;
-        
+        background-size: 300px 300px;
         @media only screen and (max-width: 930px) and (orientation: landscape) {
-          width: 40%;
+          width: 30%;
         }
         @media only screen and (max-width: 930px) and (orientation: portrait) {
           width: 100%;
           height: 30%;
           border-left: none;
           border-top: 2px solid var(--gray2);
+        }
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: calc(50% - 100px);
+          width: 200px;
+          height: 100%;
+          margin: 0 auto;
+          background-color: rgba(#181c23, 0.45);
+          @media only screen and (max-width: 930px) {
+            width: 120px;
+            left: calc(50% - 60px);
+          }
         }
         &:after {
           content: '';
@@ -110,7 +122,9 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
           transition: all 150ms ease;
           cursor: pointer;
           @media only screen and (max-width: 930px) and (orientation: landscape) {
-            top: calc(50% - 40px);
+            top: calc(50% - 30px);
+            width: 10px;
+            height: 55px;
           }
           @media only screen and (max-width: 930px) and (orientation: portrait) {
             top: -6px;
@@ -125,15 +139,15 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
         .drone-container {
           color: var(--white);
           max-width: 150px;
-          animation: moveDrone 51s infinite;
+          animation: moveDrone 50s infinite;
           animation-timing-function: linear;
           @media only screen and (max-width: 930px) and (orientation: landscape) {
-            animation: moveDroneLand 51s infinite;
-           animation-timing-function: linear;  
+            animation: moveDroneLand 50s infinite;
+            animation-timing-function: linear;  
           }
           @media only screen and (max-width: 930px) and (orientation: portrait) {
-            animation: moveDronePort 51s infinite;
-           animation-timing-function: linear;  
+            animation: moveDronePort 50s infinite;
+            animation-timing-function: linear;  
           }
         }
       }
@@ -141,12 +155,12 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
 
     @keyframes moveDrone {
         0%    { transform: translateY(300%); }
-        100%  { transform: translateY(0); }
+        100%  { transform: translateY(-150%); }
       }
 
       @keyframes moveDroneLand {
         0%    { transform: translateY(100%); }
-        100%  { transform: translateY(0); }
+        100%  { transform: translateY(-100%); }
       }
       @keyframes moveDronePort {
         0%    { transform: translateY(50%); }

@@ -14,7 +14,7 @@
     }
 
 </script>
-<div class="container container--left-bar">
+<nav class="nav nav--left-bar">
     <button class="icon-button" on:click={toggleNav}> 
         <Settings5Line size="28"/>
     </button>
@@ -33,9 +33,9 @@
     <button class="icon-button icon-button--chevron"> 
         <ArrowUpSLine size="40"/>
     </button>
-</div>
+</nav>
   <style lang="scss">
-      .container--left-bar {
+      .nav--left-bar {
         position: absolute;
         z-index: 3;
         left: 0;
@@ -45,9 +45,9 @@
         background-color: transparent;
         display: flex;
         flex-direction: column;
-        @media only screen and (max-width: 930px) and (orientation: portrait) {
-            padding: 5.5rem .5rem .5rem .5rem;
-            height: calc(100vh - 6rem);
+        @media only screen and (max-width: 930px) and (orientation: landscape) {
+            padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+            height: calc(100vh - 3rem);
         }
           .icon-button {
               border: none;

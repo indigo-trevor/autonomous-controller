@@ -7,7 +7,7 @@
   import BatteryLine from 'svelte-remixicon/lib/icons/BatteryLine.svelte';
   import SignalWifi3Line from 'svelte-remixicon/lib/icons/SignalWifi3Line.svelte';
 </script>
-<div class="container container--footer">
+<footer class="footer">
     <div class="content-container">
         <div class="footer-item">
             <p class="footer-item__title">Nova-0023</p>
@@ -56,9 +56,9 @@
             <p class="footer-item__title">14:23</p>
         </div>
     </div>
-</div>
+</footer>
   <style lang="scss">
-      .container--footer {
+      .footer {
         position: fixed;
         left: 0;
         bottom: 0;
@@ -70,11 +70,12 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
-            @media only screen and (max-width: 930px) and (orientation: portrait) {
+            @media only screen and (max-width: 415px) and (orientation: portrait) {
                 flex-flow: row nowrap;
                 overflow-x: scroll;
-                height: 40px;
-                flex-basis: auto;
+                justify-content: flex-start;
+                flex-basis: max-content;
+                overflow-y: hidden;
             }
             .footer-item {
                 position: relative;
@@ -83,6 +84,9 @@
                 font-size: .75rem;
                 line-height: 20px;
                 color: var(--gray2);
+                @media only screen and (max-width: 415px) and (orientation: portrait) {
+                    padding: .5rem .72rem;
+                }
                 &__title {
                     position: relative;
                     display: inline-block;
@@ -114,6 +118,10 @@
                             top: 6px;
                             left: 3px;
                             color: var(--blue2);
+
+                            @media only screen and (max-width: 930px) and (orientation: portrait) {
+                                left: 0;
+                            }
                         }
                         &--cell {
                             top: 8px;
@@ -136,6 +144,9 @@
                 }
                 &:first-child {
                     margin-right: 2px;
+                    @media only screen and (max-width: 930px) and (orientation: portrait) {
+                        min-width: 62px;
+                    }
                 }
                 &:last-child {
                     margin-left: 2px;

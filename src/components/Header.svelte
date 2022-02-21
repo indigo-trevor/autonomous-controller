@@ -1,7 +1,7 @@
 <script>
   
 </script>
-<div class="container container--header">
+<header class="header">
     <div class="content-container">
         <div class="header-item">
             <p class="header-item__title">Elapsed</p>
@@ -28,9 +28,9 @@
             <p class="header-item__desc">11SMS 84266 19741</p>
         </div>
     </div>
-</div>
+</header>
   <style lang="scss">
-      .container--header {
+      .header {
         position: fixed;
         left: 0;
         top: 0;
@@ -44,6 +44,14 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
+            @media only screen and (max-width: 415px) and (orientation: portrait) {
+                flex-flow: row nowrap;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                justify-content: flex-start;
+                flex-basis: max-content;
+                height: 48px;
+            }
             .header-item {
                 position: relative;
                 padding: .5rem 1rem .25rem 1rem;
