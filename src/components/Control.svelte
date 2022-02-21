@@ -139,14 +139,14 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
         .drone-container {
           color: var(--white);
           max-width: 150px;
-          animation: moveDrone 50s infinite;
+          animation: moveDrone 51s infinite;
           animation-timing-function: linear;
           @media only screen and (max-width: 930px) and (orientation: landscape) {
-            animation: moveDroneLand 50s infinite;
+            animation: moveDroneLand 51s infinite;
             animation-timing-function: linear;  
           }
           @media only screen and (max-width: 930px) and (orientation: portrait) {
-            animation: moveDronePort 50s infinite;
+            animation: moveDronePort 51s infinite;
             animation-timing-function: linear;  
           }
         }
@@ -154,8 +154,8 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
     }
 
     @keyframes moveDrone {
-        0%    { transform: translateY(300%); }
-        100%  { transform: translateY(-150%); }
+        0%    { transform: translateY(250%); }
+        100%  { transform: translateY(-250%); }
       }
 
       @keyframes moveDroneLand {

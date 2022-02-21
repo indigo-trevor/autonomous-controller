@@ -2,8 +2,9 @@
     import PencilLine from 'svelte-remixicon/lib/icons/PencilLine.svelte';
     import Ruler2Line from 'svelte-remixicon/lib/icons/Ruler2Line.svelte';
     import CommandLine from 'svelte-remixicon/lib/icons/CommandLine.svelte';
+    import { showControl } from './stores.js';
 </script>
-<nav class="nav nav--right-bar">
+<nav class="nav nav--right-bar {$showControl === false ? 'bottom' : ''}">
     <button class="icon-button"> 
         <PencilLine size="28"/>
     </button>
@@ -76,6 +77,26 @@
                     }
                 }
           } 
+          &.bottom {
+              height: auto;
+              position: absolute;
+              top: auto;
+              bottom: 0;
+              display: block;
+              @media only screen and (max-width: 930px) and (orientation: portrait) {
+                padding-bottom: 55px;
+            }
+            .icon-button {
+                &--command {
+                    margin-top: 100px;
+                    bottom: auto;
+                    @media only screen and (max-width: 930px) {
+                        margin-top: 2rem;
+                        transform: translateX(8px);
+                    }
+                }
+            }
+          }
       }
   </style>
 
