@@ -3,10 +3,10 @@
 Creating a prototype of an autonomous controller to be used for AB tests. The operator has access to a 360 degree FPV via a drone and has the the ability to move around 360 degrees space at their leisuer. 
 
 ## The test two variations:
-1. Control - Side by side view in which the user will have the ability to drag the screen to toggle width of sections.
-2. Variation 1 - Picture in picture layout in which the user can toggle which view takes up the large view. 
+1. <b>Control -</b> Side by side view in which the user will have the ability to drag the screen to toggle width of sections.
+2. <b>Variation 1 -</b> Picture in picture layout in which the user can toggle which view takes up the large view. 
 
-<b>You can toggle the test variation by clicking the settings gear icon in the top left of your screen.</b>
+<b>*You can toggle the test variation by clicking the settings gear icon in the top left of your screen.</b>
 
 ## What is used
 - [Svelte](https://svelte.dev/)
