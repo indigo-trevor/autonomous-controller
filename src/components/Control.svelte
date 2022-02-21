@@ -105,7 +105,7 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
           width: 12px;
           height: 80px;
           border-radius: 8px;
-          background-color: var(--white);
+          background-color: var(--gray1);
           box-shadow: 0px 2px 4px var(--gray5);
           transition: all 150ms ease;
           cursor: pointer;
@@ -125,14 +125,14 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
         .drone-container {
           color: var(--white);
           max-width: 150px;
-          animation: moveDrone 50s infinite;
+          animation: moveDrone 51s infinite;
           animation-timing-function: linear;
           @media only screen and (max-width: 930px) and (orientation: landscape) {
-            animation: moveDroneLand 50s infinite;
+            animation: moveDroneLand 51s infinite;
            animation-timing-function: linear;  
           }
           @media only screen and (max-width: 930px) and (orientation: portrait) {
-            animation: moveDronePort 50s infinite;
+            animation: moveDronePort 51s infinite;
            animation-timing-function: linear;  
           }
         }

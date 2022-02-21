@@ -74,6 +74,7 @@
                 flex-flow: row nowrap;
                 overflow-x: scroll;
                 height: 40px;
+                flex-basis: auto;
             }
             .footer-item {
                 position: relative;

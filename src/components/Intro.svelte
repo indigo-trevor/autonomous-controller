@@ -28,11 +28,16 @@
 </div>
 <style lang="scss">
     .container--intro {
-      position: absolute;
-      width: 100%;
-      height: 100%;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
       z-index: 4;
       background-color: var(--gray5);
+      background-image: linear-gradient(rgba(#232932, 0.7), rgba(#232932, 0.7)), url("assets/grid.png");
+        background-repeat: repeat;
+        background-size: 300px 400px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -74,7 +79,7 @@
         position: relative;
         margin-top: 1.5rem;
         transform: scale(1);
-        box-shadow: 0px 2px 4px var(--black);
+        box-shadow: 0px 2px 4px var(--gray6);
         transition: all 150ms ease;
         @media only screen and (max-width: 930px) and (orientation: portrait) {
            margin-top: 2rem;

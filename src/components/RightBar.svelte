@@ -58,7 +58,7 @@
                   bottom: 0;
                   @media only screen and (max-width: 930px) and (orientation: portrait) {
                     bottom: 50px;
-                }
+                  }
                 }
                 &:hover {
                     color: var(--blue3);
