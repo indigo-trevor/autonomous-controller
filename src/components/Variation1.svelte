@@ -96,6 +96,7 @@
           background-color: var(--gray4);
           z-index: 2;
           transition: all 350ms ease;
+          cursor: grab;
           canvas {
               position: relative;
               width: 100%;
@@ -107,6 +108,9 @@
               left: 50%;
               top: 50%;
               transform: translate(-50%,-50%);
+          }
+          &:active {
+            cursor: grabbing;
           }
         }
         .container--map {

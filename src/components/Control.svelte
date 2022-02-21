@@ -51,12 +51,16 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
         height: 100%;
         background-color: var(--gray4);
         z-index: 2;
+        cursor: grab;
         @media only screen and (max-width: 930px) and (orientation: landscape) {
           width: 70%;
         }
         @media only screen and (max-width: 930px) and (orientation: portrait) {
            width: 100%;
            height: 70%;
+        }
+        &:active {
+          cursor: grabbing;
         }
         canvas {
             position: relative;
