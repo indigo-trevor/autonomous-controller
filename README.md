@@ -21,6 +21,7 @@ Creating a prototype of an autonomous controller to be used for AB tests. The op
 - [Svelte](https://svelte.dev/)
 - [SASS](https://sass-lang.com/)
 - [BEM](http://getbem.com/)
+- [Svelte Remix Icons](https://github.com/aantusahaa/svelte-remixicon)
 - [Babylon.js](https://www.babylonjs.com/)
 - [Lottie](https://airbnb.io/lottie/#/)
 
