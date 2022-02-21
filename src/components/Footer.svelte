@@ -70,6 +70,11 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
+            @media only screen and (max-width: 930px) and (orientation: portrait) {
+                flex-flow: row nowrap;
+                overflow-x: scroll;
+                height: 40px;
+            }
             .footer-item {
                 position: relative;
                 padding: .5rem .5rem;

@@ -25,6 +25,10 @@
         background-color: transparent;
         display: flex;
         flex-direction: column;
+        @media only screen and (max-width: 930px) and (orientation: portrait) {
+            padding: 5.5rem .5rem .5rem .5rem;
+            height: calc(100vh - 6rem);
+        }
           .icon-button {
               border: none;
               position: relative;
@@ -52,16 +56,20 @@
                   margin-top: auto;
                   margin-bottom: 0;
                   bottom: 0;
+                  @media only screen and (max-width: 930px) and (orientation: portrait) {
+                    bottom: 50px;
+                }
                 }
                 &:hover {
-                    color: var(--blue2);
+                    color: var(--blue3);
                 }
                 &:active {
-                    color: var(--blue2);
+                    color: var(--blue3);
                     transform: scale(0.95);
                 }
                 &--ruler {
                     transform: rotate(270deg);
+                    color: var(--blue3);
                     &:active {
                         transform: scale(0.95) rotate(270deg);
                     }

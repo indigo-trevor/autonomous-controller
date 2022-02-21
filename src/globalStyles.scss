@@ -4,14 +4,16 @@
     --font-family: "Helvetica Neue",Arial,sans-serif;
     // Colors
     --white: #FFFFFF;
+    --black: #000000;
     --blue1: #0D59F2;
-    --blue2: #3d7af5;
+    --blue2: #0079d0;
     --blue3: #86ACF8;
     --gray1: #aeb7c9;
     --gray2: #6d7c97;
     --gray3: #38404f;
     --gray4: #232932;
     --gray5: #181c23;
+    --gray6: #161616;
 }
 
 // END: Setting global variables
@@ -26,15 +28,6 @@ body {
     margin: 0 0;
 }
 // END: Setting global typography
-
-// START: Layout styling
-
-// .l-section {
-//     position: relative;
-//     overflow-x: hidden;
-// }
-
-// END: Layout styling
 
 
 // START: Modifiers
