@@ -1,4 +1,3 @@
-
 <script>
   import Video from "./Video";
   import { onMount } from 'svelte';
@@ -156,10 +155,14 @@
           .drone-container {
             color: var(--white);
             max-width: 120px;
+            -webkit-animation: moveDronePiP 51s infinite;
+            -moz-animation: moveDronePiP 51s infinite;
             animation: moveDronePiP 51s infinite;
             animation-timing-function: linear;
             @media only screen and (max-width: 930px) {
               max-width: 80px;
+              -webkit-animation: moveDronePiPMobile 51s infinite;
+             -moz-animation: moveDronePiPMobile 51s infinite;
               animation: moveDronePiPMobile 51s infinite;
             }
           }
@@ -204,30 +207,78 @@
             }
             .drone-container {
               max-width: 150px;
+              -webkit-animation: moveDroneFullScreen 51s infinite;
+             -moz-animation: moveDroneFullScreen 51s infinite;
               animation: moveDroneFullScreen 51s infinite;
               @media only screen and (max-width: 930px) and (orientation: landscape) {
+                -webkit-animation: moveDroneFullScreenLandscape 51s infinite;
+                -moz-animation: moveDroneFullScreenLandscape 51s infinite;
                 animation: moveDroneFullScreenLandscape 51s infinite;
               }
             }
           }
         }
       }
-  
+        // PIP
+        @-webkit-keyframes moveDronePiP {
+          0%    { -webkit-transform: translateY(85%); }
+          100%  { -webkit-transform: translateY(-85%); }
+        }
+        @-moz-keyframes moveDronePiP {
+          0%    { transform: translateY(85%); }
+          100%  { transform: translateY(-85%); }
+        }
         @keyframes moveDronePiP {
           0%    { transform: translateY(85%); }
           100%  { transform: translateY(-85%); }
+        }
+        // PIP Mobile
+        @-webkit-keyframes moveDronePiPMobile {
+          0%    { -webkit-transform: translateY(65%); }
+          100%  { -webkit-transform: translateY(-60%); }
+        }
+        @-moz-keyframes moveDronePiPMobile {
+          0%    { transform: translateY(65%); }
+          100%  { transform: translateY(-60%); }
         }
         @keyframes moveDronePiPMobile {
           0%    { transform: translateY(65%); }
           100%  { transform: translateY(-60%); }
         }
+        // Full screen
+        @-webkit-keyframes moveDroneFullScreen {
+          0%    { -webkit-transform: translateY(300%); }
+           100%  { -webkit-transform: translateY(-150%); }
+        }
+        @-moz-keyframes moveDroneFullScreen {
+          0%    { transform: translateY(300%); }
+           100%  { transform: translateY(-150%); }
+        }
         @keyframes moveDroneFullScreen {
           0%    { transform: translateY(300%); }
            100%  { transform: translateY(-150%); }
         }
+        // Fullscreen landscape
+        @-webkit-keyframes moveDroneFullScreenLandscape {
+          0%    { -webkit-transform: translateY(100%); }
+           100%  { -webkit-transform: translateY(-100%); }
+        }
+        @-moz-keyframes moveDroneFullScreenLandscape {
+          0%    { transform: translateY(100%); }
+           100%  { transform: translateY(-100%); }
+        }
         @keyframes moveDroneFullScreenLandscape {
           0%    { transform: translateY(100%); }
            100%  { transform: translateY(-100%); }
+        }
+        // Mobile portrait
+        @-webkit-keyframes moveDronePort {
+          0%    { -webkit-transform: translateY(50%); }
+          100%  { -webkit-transform: translateY(-50%); }
+        }
+        @-moz-keyframes moveDronePort {
+          0%    { transform: translateY(50%); }
+          100%  { transform: translateY(-50%); }
         }
         @keyframes moveDronePort {
           0%    { transform: translateY(50%); }

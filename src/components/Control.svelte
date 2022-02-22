@@ -1,8 +1,6 @@
-
 <script>
 import Video from "./Video";
 import { onMount } from 'svelte';
-
 import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
 
   let canvas;
@@ -28,8 +26,8 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
         controls="{false}"
         renderer="svg"
         background="transparent"
-        height="{'100%'}"
-        width="{'100%'}"
+        height="{113}"
+        width="{150}"
       />
     </div>
   </div>
@@ -143,28 +141,59 @@ import { LottiePlayer } from '@lottiefiles/svelte-lottie-player';
         .drone-container {
           color: var(--white);
           max-width: 150px;
+          -webkit-animation: moveDrone 51s infinite;
+          -moz-animation: moveDrone 51s infinite;
           animation: moveDrone 51s infinite;
           animation-timing-function: linear;
           @media only screen and (max-width: 930px) and (orientation: landscape) {
+            -webkit-animation: moveDroneLand 51s infinite;
+            -moz-animation: moveDroneLand 51s infinite;
             animation: moveDroneLand 51s infinite;
             animation-timing-function: linear;  
           }
           @media only screen and (max-width: 930px) and (orientation: portrait) {
+            -webkit-animation: moveDronePort 51s infinite;
+            -moz-animation: moveDronePort 51s infinite;
             animation: moveDronePort 51s infinite;
             animation-timing-function: linear;  
           }
         }
       }
     }
-
-    @keyframes moveDrone {
-        0%    { transform: translateY(250%); }
-        100%  { transform: translateY(-250%); }
+    // Move drone desktop
+      @-webkit-keyframes moveDrone {
+          0%    { -webkit-transform: translateY(250%); }
+          100%  { -webkit-transform: translateY(-250%); }
       }
-
+      @-moz-keyframes moveDrone {
+          0%    { transform: translateY(250%); }
+          100%  { transform: translateY(-250%); }
+      }
+      @keyframes moveDrone {
+          0%    { transform: translateY(250%); }
+          100%  { transform: translateY(-250%); }
+      }
+      // Mobile Landscape
+      @-webkit-keyframes moveDroneLand {
+        0%    { -webkit-transform: translateY(100%); }
+        100%  { -webkit-transform: translateY(-100%); }
+      }
+      @-moz-keyframes moveDroneLand {
+        0%    { transform: translateY(100%); }
+        100%  { transform: translateY(-100%); }
+      }
       @keyframes moveDroneLand {
         0%    { transform: translateY(100%); }
         100%  { transform: translateY(-100%); }
+      }
+      // Mobile Portrait
+      @-webkit-keyframes moveDronePort {
+        0%    { -webkit-transform: translateY(50%); }
+        100%  { -webkit-transform: translateY(-50%); }
+      }
+      @-moz-keyframes moveDronePort {
+        0%    { transform: translateY(50%); }
+        100%  { transform: translateY(-50%); }
       }
       @keyframes moveDronePort {
         0%    { transform: translateY(50%); }
